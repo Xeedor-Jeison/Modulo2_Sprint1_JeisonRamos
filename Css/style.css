@@ -7,3 +7,23 @@
     height: 100%;
     width: 100%;
 }
+.nav-link:hover{
+    background-color: #be4d25!important;
+    color: white !important;
+}
+main{
+    background-color: #e4e4e4;
+}
+.search:hover{
+    background-color: #be4d25 !important;
+    border-color: #be4d25 !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important;
+}
+
+@media only screen and (min-width:325px) and (max-width:768px){
+    .img{
+        width: 4vw;
+    }
+}   
