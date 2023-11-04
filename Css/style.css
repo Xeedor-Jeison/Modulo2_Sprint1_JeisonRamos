@@ -1,17 +1,8 @@
-.div-container  {
-    display: block;
-    width: 100%;
-    height: 450px;
-}
-.div-container > img {
-    height: 100%;
-    width: 100%;
-}
 .nav-link:hover{
     background-color: #be4d25!important;
     color: white !important;
 }
-main{
+main,.tarjeta{
     background-color: #e4e4e4;
 }
 .search:hover{
@@ -26,5 +17,46 @@ main{
 }
 .h-100{
     height: 88% !important;
+}
+
+
+td{
+    height: 30px;
+}
+.div-tarjeta{
+    height: 79vh !important;
+}
+
+@media only screen and (min-width:325px) and (max-width:1024px){
+    .div-container  {
+        display: block;
+        width: 100%;
+        height: 340px;
+    }
+    .div-container > img {
+        height: 100%;
+        width: 100%;
+    }
+    .div-h1-p{
+        height: 300px !important;
+    }
+    .logo{
+        width: 50vw;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    .div-container  {
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+    .div-container > img {
+        height: 100%;
+        width: 100%;
+    }
+    .div-h1-p{
+        height: 450px !important;
+    }
 }
 
