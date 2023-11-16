@@ -12,14 +12,12 @@ main,.tarjeta{
 .carousel-control-next, .carousel-control-prev{
     width: 5% !important;
 }
+.carru-cards{
+    background-color: rgb(186, 192, 192) !important;
+}
 .img{
     max-width: 20% !important;
 }
-.h-100{
-    height: 88% !important;
-}
-
-
 td{
     height: 30px;
 }
@@ -27,36 +25,92 @@ td{
     height: 79vh !important;
 }
 
-@media only screen and (min-width:325px) and (max-width:1024px){
+@media only screen and (min-width:325px) and (max-width:768px){
     .div-container  {
-        display: block;
-        width: 100%;
         height: 340px;
     }
     .div-container > img {
         height: 100%;
-        width: 100%;
     }
     .div-h1-p{
         height: 300px !important;
     }
     .logo{
-        width: 50vw;
+        width: 30vw !important;
     }
+    .img-card{
+        height: 58%;
+    }
+    
+}
+@media only screen and (min-width:769px) and (max-width:1023px){
+    .div-container  {
+        height: 340px;
+    }
+    .div-container > img {
+        height: 100%;
+    }
+    .div-h1-p{
+        height: 300px !important;
+    }
+    .logo{
+        width: 30vw !important;
+    }
+    .img-card{
+        height: 58%;
+    }
+    .tamañoCard{
+        height: 40vh;
+    }
+    .altura{
+        height: 7vh;
+    }
+    
 }
 
-@media only screen and (min-width:1025px){
+@media only screen and (min-width:1024px) and (max-width:1025px){
     .div-container  {
-        display: block;
-        width: 100%;
+        height: 340px;
+    }
+    .div-container > img {
+        height: 100%;
+    }
+    .div-h1-p{
+        height: 300px !important;
+    }
+    .logo{
+        width: 30vw !important;
+    }
+    .img-card{
+        height: 58%;
+    }
+    .tamañoCard{
+        height: 90%;
+    }
+    .altura{
+        height: 7vh;
+    }
+    
+}
+
+@media only screen and (min-width:1026px){
+    .div-container  {
         height: 450px;
     }
     .div-container > img {
         height: 100%;
-        width: 100%;
     }
     .div-h1-p{
         height: 450px !important;
+    }
+    .tamañoCard{
+        height: 60vh;
+    }
+    .img-card{
+        height: 58%;
+    }
+    .altura{
+        height: 7vh;
     }
 }
 
