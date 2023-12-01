@@ -49,34 +49,39 @@
     </header>
 
     <main>
-        <div class="div-tarjeta d-sm-none d-xl-flex align-items-center ">
+        <div class="div-tarjeta d-sm-none d-xl-flex align-items-center justify-content-center">
             <div class="pt-2 d-flex justify-content-center ">
                 <div class="card d-none d-xl-block m-5 tarjeta border-primary border-3 rounded-5 w-75 ">
 
-                    <div class=" g-0  d-flex align-items-center justify-content-evenly">
+                    <div class=" g-0  d-flex align-items-center justify-content-around ">
                         <div class="col-md-5 border ms-5 mt-5 mb-5">
-                            <img src="./Imagenes/food_fair.jpg" class="img-fluid rounded-start" alt="...">
+                            <img id="imagen" src="./Imagenes/food_fair.jpg" class="card-img-top  img-card rounded-start" alt="...">
                         </div>
-                        <div class="col-md-5 border border-primary border-2 ms-5 mt-5 mb-5 bg-light bg-gradient">
+                        <div class="col-md-5 border border-primary border-2 me-4 ms-5 mt-5 mb-5 rounded-5 bg-light bg-gradient">
                             <div class="card-body">
-                                <h5 class="card-title display-6 fw-bold">Festival of the collectivities</h5>
+                                <h5 id="title" class="card-title display-6 fw-bold">Festival of the collectivities</h5>
                                 <h5 class="card-title d-inline ">Date:</h5>
-                                <p class="card-text d-inline"> 2022-12-12</p> <br>
+                                <p id="date" class="card-text d-inline "> 2022-12-12</p> <br>
 
                                 <h5 class="card-title d-inline">Description:</h5>
 
-                                <p class="card-text d-inline">Enjoy your favorite dishes from different countries in a
+                                <p id="description" class="card-text d-inline mb-3">Enjoy your favorite dishes from different
+                                    countries in a
                                     unique event for the whole family.</p> <br>
                                 <h5 class="card-title d-inline">Category:</h5>
-                                <p class="card-text d-inline"> Food Fair</p> <br>
+                                <p id="category" class="card-text d-inline mb-3"> Food Fair</p> <br>
                                 <h5 class="card-title d-inline">Place:</h5>
-                                <p class="card-text d-inline"> Room A</p> <br>
+                                <p id="place" class="card-text d-inline mb-3"> Room A</p> <br>
                                 <h5 class="card-title d-inline">Capacity:</h5>
-                                <p class="card-text d-inline"> 45000</p> <br>
-                                <h5 class="card-title d-inline">Assistance:</h5>
-                                <p class="card-text d-inline"> 42756</p> <br>
+                                <p id="capacity" class="card-text d-inline mb-3"> 45000</p> <br>
+
+                                <div id="assistanceEstimate">
+                                    <!-- <h5 class="card-title d-inline">Assistance:</h5>
+                                    <p id="assistance" class="card-text d-inline"> 42756</p> <br> -->
+                                </div>
+
                                 <h5 class="card-title d-inline">Price:</h5>
-                                <p class="card-text d-inline"> $5</p>
+                                <p id="price" class="card-text d-inline"> $5</p>
                             </div>
                         </div>
                     </div>
@@ -89,24 +94,30 @@
         <section>
             <div class="d-flex justify-content-center align-items-center  d-sm d-xl-none  ">
                 <div class="card card-body col-6 mb-5 ms-2 me-2 rounded-4">
-                    <img src="./Imagenes/food_fair.jpg" class="card-img-top rounded-start " alt="Food Fair">
-                    <h5 class="card-title display-6 fw-bold mt-sm-5">Festival of the collectivities</h5>
+                    <img id="imagenRP" src="./Imagenes/food_fair.jpg" class="card-img-top rounded-start "
+                        alt="Food Fair">
+                    <h5 id="titleRP" class="card-title display-6 fw-bold mt-sm-5">Fessivities</h5>
                     <h5 class="card-title d-inline">Date:</h5>
-                    <p class="card-text d-inline"> 2022-12-12</p> <br>
+                    <p id="dateRP" class="card-text d-inline"> 2022-12-12</p> <br>
                     <h5 class="card-title d-inline">Description:</h5>
 
-                    <p class="card-text d-inline">Enjoy your favorite dishes from different countries in a unique
+                    <p id="descriptionRP" class="card-text d-inline">Enjoy your favorite dishes from different countries
+                        in a unique
                         event for the whole family.</p> <br>
                     <h5 class="card-title d-inline">Category:</h5>
-                    <p class="card-text d-inline"> Food Fair</p> <br>
+                    <p id="categoryRP" class="card-text d-inline"> Food Fair</p> <br>
                     <h5 class="card-title d-inline">Place:</h5>
-                    <p class="card-text d-inline"> Room A</p> <br>
+                    <p id="placeRP" class="card-text d-inline"> Room A</p> <br>
                     <h5 class="card-title d-inline">Capacity:</h5>
-                    <p class="card-text d-inline"> 45000</p> <br>
-                    <h5 class="card-title d-inline">Assistance:</h5>
-                    <p class="card-text d-inline"> 42756</p> <br>
+                    <p id="capacityRP" class="card-text d-inline"> 45000</p> <br>
+                    <div id="assistanceEstimateRP">
+                        <h5 class="card-title d-inline">Assistance:</h5><br>
+
+                        <p id="assistanceRP" class="card-text d-inline"> 42756</p> <br>
+                    </div>
+                    <br>
                     <h5 class="card-title d-inline">Price:</h5>
-                    <p class="card-text d-inline"> $5</p>
+                    <p id="priceRP" class="card-text d-inline"> $5</p>
                 </div>
 
             </div>
@@ -141,7 +152,7 @@
 
 
     </footer>
-
+    <script src="./javascript/details.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

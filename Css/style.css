@@ -22,7 +22,7 @@ td{
     height: 30px;
 }
 .div-tarjeta{
-    height: 79vh !important;
+    height: 82vh !important;
 }
 
 @media only screen and (min-width:325px) and (max-width:768px){
@@ -114,3 +114,6 @@ td{
     }
 }
 
+.opacity-bg{
+    opacity: .7;
+}
