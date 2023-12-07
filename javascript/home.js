@@ -1,9 +1,9 @@
 import * as misFunciones from "../modulos/funciones.js"
 import * as misVariables from "../modulos/variables.js"
 
-let url = "https://mindhub-xj03.onrender.com/api/amazing"
 
-fetch(url)
+
+fetch(misVariables.url)
     .then(response => response.json())
     .then(data => {
 

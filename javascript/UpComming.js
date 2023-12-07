@@ -1,9 +1,9 @@
 import * as misFunciones from "../modulos/funciones.js"
 import * as misVariables from "../modulos/variables.js"
 
-let url = "https://mindhub-xj03.onrender.com/api/amazing"
 
-fetch(url)
+
+fetch(misVariables.url)
     .then(response => response.json())
     .then(data => {
 
@@ -16,8 +16,6 @@ fetch(url)
         misVariables.divCheckbox.addEventListener("change", e => {
             let checked = Array.from(document.querySelectorAll("input[type=checkbox]:checked")).map(checkbox => checkbox.value.toLowerCase())
             
-
-
             let newArray;
 
             if (checked.length === 0) {
@@ -32,7 +30,6 @@ fetch(url)
 
         misFunciones.crearCheckbox(arrayCategory)
 
-        
         misVariables.search.addEventListener("keyup", e => {
             let checked = Array.from(document.querySelectorAll("input[type=checkbox]:checked")).map(checkbox => checkbox.value.toLowerCase())
 
@@ -64,11 +61,9 @@ fetch(url)
 
             </div>`
 
-
                 }
                 else { misFunciones.crearTarjetas(nuevoArregloBuscar, misVariables.carrusel) }
             }
-
         })
 
     })
