@@ -42,7 +42,7 @@ fetch(misVariables.url)
                 if (buscador.length == 0) {
                     misVariables.carrusel.innerHTML = `
             <div class="carousel-item active tamañoCard d-flex justify-content-center align-items-center "> 
-            <div class= "bg-primary text-white rounded-5 p-3 ps-5 pe-5 m-3 opacity-bg"><h2 class="display-5 fw-bold  fst-italic text-center">No hay eventos disponibles para esta categoria seleccionada</h2></div>
+            <div class= "bg-primary text-white rounded-5 p-3 ps-5 pe-5 m-3 opacity-bg"><h2 class="display-5 fw-bold  fst-italic text-center">There are no events available for this search</h2></div>
 
             </div>`
                 }
@@ -56,7 +56,7 @@ fetch(misVariables.url)
                 if (nuevoArregloBuscar.length == 0) {
                     misVariables.carrusel.innerHTML = `
             <div class="carousel-item active tamañoCard d-flex justify-content-center align-items-center "> 
-            <div class= "bg-primary text-white rounded-5 p-3 ps-5 pe-5 m-3 opacity-bg"><h2 class="display-5 fw-bold  fst-italic text-center">No hay eventos disponibles para esta categoria seleccionada</h2></div>
+            <div class= "bg-primary text-white rounded-5 p-3 ps-5 pe-5 m-3 opacity-bg"><h2 class="display-5 fw-bold  fst-italic text-center">There are no events available for this search</h2></div>
 
             </div>`
 
